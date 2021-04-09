@@ -31,9 +31,6 @@ a {
     display: flex;
 }
 
-.d-flex.justify--space-between {
-    justify-content: space-between;
-}
 
 .align-justify--center{
     align-items: center;
@@ -57,17 +54,21 @@ a {
     margin-bottom: 30px;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
 /* style service other */
 
-.service-other{
+.service{
     padding: 50px 0;
 }
 
-.service-other-wrapper{
+.service-wrapper{
     background-color: var(--white);
 }
 
-.service-other__title{
+.service__title{
     font-size: 18px;
     position: relative;
 }
