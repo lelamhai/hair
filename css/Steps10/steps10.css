@@ -6,7 +6,7 @@
 }
 
 .container-main {
-  width: 90%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -31,6 +31,10 @@
   flex-wrap: wrap;
 }
 
+.step10 .menu-step .row-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .menu-step .item-menu-step {
   flex-basis: 50%;
   /* width: 100%; */
@@ -50,7 +54,7 @@
   justify-content: center;
   flex-wrap: wrap;
   text-align: justify;
-  padding-right: 30px;
+  padding: 15px;
 }
 
 .item-menu-step .content-item h3 {
@@ -75,11 +79,6 @@
   content: "◆";
   position: absolute;
   left: 0px;
-}
-
-.item-menu-step .content-right {
-  padding-right: unset;
-  padding-left: 30px;
 }
 
 .menu-step .line {
