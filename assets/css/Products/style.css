@@ -1,0 +1,150 @@
+:root {
+    --pd: 10px;
+    --ticket-ml: 20px;
+    --red: red;
+    --white: white;
+    --text-color: #999999;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-justify--center {
+    align-items: center;
+    justify-content: center;
+}
+
+.pt-48 {
+    padding-top: 48px;
+}
+
+.pt-b-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ml-12 {
+    margin-left: 12px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+/* style product */
+
+.product {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.product__banner {
+    width: 100%;
+}
+
+.product__item {
+    background-color: #FDFDFD;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.product__item:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.2s linear;
+}
+
+.product__detail {
+    padding: 0 10px;
+}
+
+.product__link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.product__link:hover {
+    color:#dea43e;
+}
+
+.product__price--new {
+    font-size: 14px;
+    font-weight: 800;
+    color: red;
+}
+
+.product__price--old {
+    text-decoration: line-through;
+    color: #afaeae;
+    font-weight: 200;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* Carousel  */
+
+/* .owl-nav {
+    display: none;
+} */
+
+/* button.owl-prev {
+    left: -30px;
+    right: 0;
+    bottom: -50%;
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
+button.owl-next{
+    right: -30px;
+    bottom: -50%;
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
+button.owl-next:hover{
+    background: none;
+}
+
+
+button.owl-prev>span,button.owl-next>span {
+    font-size: 40px;
+    color: #0a0909;
+} */
+
+/* .owl-dots{
+    display: none;
+} */
