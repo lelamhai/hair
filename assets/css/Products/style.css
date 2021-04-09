@@ -68,6 +68,10 @@ a {
     width: 100%;
 }
 
+.product__heading{
+    font-size:30px;
+}
+
 .product__item {
     background-color: #FDFDFD;
     margin-bottom: 30px;
