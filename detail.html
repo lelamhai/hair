@@ -2,19 +2,286 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Hair</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
 
-    </head>
-    <body>
-        
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-      
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hair</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/Detail/responsive.css">
+    <link rel="stylesheet" href="./assets/css/Detail/style.css">
+    <link rel="stylesheet" href="./assets/js/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/js/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+        integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <section class="detail-product">
+        <section class="container detail-product-wp">
+            <div class="row">
+                <div class="col l-6 m-12">
+                    <div class="detail-product__left">
+                        <img src="./assets/img/Details/grande.jpg" alt="" class="detail-product__img img-responsive">
+                    </div>
+                </div>
+                <div class="col l-6 m-12">
+                    <div class="detail-product__right">
+                        <h3 class="detail-product__right-title">
+                            Kem Dưỡng Ủ Tóc KAYAN BB SILK dành cho tóc nhuộm
+                        </h3>
+                        <div class="detail-product__right-price">
+                            <span class="detail-product__right-percen">-17% </span>
+                            <span class="detail-product__right-price-new">190,000₫</span>
+                            <span class="detail-product__right-price-old">290,000₫</span>
+                        </div>
+                        <div class="detail-product__right-quality">
+                            <div class="detail-product__right-value">
+                                <input type="button" value="-" onclick="minusQuantity()" class="qty-btn">
+                                <input type="text" id="quantity" name="quantity" value="1" min="1"
+                                    class="detail-product__right-selector" aria-label="Quantity input">
+                                <input type="button" value="+" onclick="plusQuantity()" class="qty-btn">
+                            </div>
+                            <button class="detail-product__right-btn">
+                                THÊM VÀO GIỎ
+                            </button>
+                        </div>
+                        <div class="detail-product__right-label">
+                            <i class="fas fa-check-circle"></i>
+                            <span>CHẤT LƯỢNG ĐẢM BẢO Hơn 200 Thương Hiệu hàng đầu Thế Giới</span>
+                        </div>
+
+                        <div class="detail-product__right-label">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>VẬN CHUYỂN TỨC THỜI Giao Nhanh Nội Thành Hà Nội - Hồ Chí Minh</span>
+                        </div>
+                        <div class="detail-product__right-label">
+                            <i class="fas fa-redo"></i>
+                            <span>ĐỔI TRẢ TRÊN TOÀN HỆ THỐNG Miễn Phí Trong Vòng 30 Ngày</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l-6 m-12">
+                    <div class="detail-product-desc">
+                        <p class="detail-product-desc-title">
+                            MÔ TẢ SẢN PHẨM
+                        </p>
+                        <p class="detail-product-desc-detail">
+                            Bạn muốn có mái tóc khỏe, đẹp rạng rỡ? Việc đầu tiên là phải sử dụng dầu gội phù hợp. Và
+                            thật may mắn, chúng tôi có giải pháp dầu gội cho mọi loại tóc, để bạn cảm thấy sảng khoái
+                            chuẩn salon mỗi ngày. <br> <br>
+
+                            Mái tóc sẽ mượt hơn, bóng hơn, khỏe hơn chỉ nhờ gội đầu nếu bạn chọn đúng loại dầu gội phù
+                            hợp. Cho dù bạn muốn thêm độ phồng, kiểm soát xơ rối, giữ lọn uốn xoăn, hoặc chỉ đơn giản là
+                            muốn có mái tóc sạch sẽ, dầu gội #KAYAN được đặc chế theo công thức salon chuyên nghiệp mang
+                            lại cho bạn giải pháp làm sạch tóc dễ dàng. <br> <br>
+
+                            Chọn dầu gội phù hợp là yếu tố then chốt để có kiểu tóc đẹp, vì vậy hãy dành thời gian nghĩ
+                            về loại tóc của bạn hoặc kiểu tóc bạn muốn có, và khi mua dầu gội hãy chọn đúng loại dầu gội
+                            KAYAN tốt đáp ứng các nhu cầu này. <br>
+                            Kayan Keratin Care dành cho tóc hư tổn và sỉn màu<br>
+                            Kayan Rich Oil dành cho tóc khô và hư tổn<br>
+                            Kayan Hyaluron Hair dành cho tóc mỏng, mảnh<br>
+                            Kayan BB Silk Hair dành cho tóc nhuộm<br> <br>
+
+                            Kem Dưỡng Ủ Tóc KAYAN Rich OIl dành cho tóc khô xơ và gãy rụng<br>
+                            Dung tích: 250ml<br>
+                            Xuất xứ: Châu Âu<br>
+                            Thành phần: DẦU ARGAN, DẦU MACADAMIA, DẦU DỪA, KERATIN<br>
+                            Công dụng:<br>
+                            + Duy trì màu nhuộm của tóc, phục hồi độ óng mượt cho tóc<br>
+                            + Giúp tóc chắc khỏe, vào nếp và dễ chải<br> <br>
+
+                            Cách sử dụng:
+                            Sau khi gội đầu sạch, lấy một lượng vừa đủ kem ủ tóc Keratin Care xoa đều lên tóc. Sau đó
+                            quấn khăn ủ.Bạn có thể để tự nhiên hoặc dùng máy kích nhiệt khoảng 10 – 20 phút. Sau đó xả
+                            sạch, rồi sấy khô, tạo kiểu.<br> <br>
+
+                            Sử dụng tốt nhất 2-3 lần/tuần
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container product-related">
+
+            <h3 class="product-related-title">Sản phẩm liên quan</h3>
+            <div class="row">
+                <div class="col l-12">
+                    <div class="row">
+
+                        <div class=" owl-carousel owl-theme">
+                            <div class="product__item">
+                                <a href="#" class="product__thumb">
+                                    <img src="./assets/img/Detail/product-1.png" alt=""
+                                        class="product__photo img-responsive">
+                                </a>
+
+                                <div class="product__detail">
+                                    <a href="#" class="product__link">Bộ đôi DẦU GỘI - XẢ TIGI RESURRECTION
+                                        970ml -
+                                        Phiên
+                                        bản
+                                        mới 2021</a>
+                                    <p class="product__price--new">780,000₫ <span class="product__price--old">1.500.000₫
+                                        </span> </p>
+                                </div>
+
+                            </div>
+
+                            <div class="product__item">
+                                <a href="#" class="product__thumb">
+                                    <img src="./assets/img/Detail/product-2.png" alt=""
+                                        class="product__photo img-responsive">
+                                </a>
+
+                                <div class="product__detail">
+                                    <a href="#" class="product__link">Bộ đôi DẦU GỘI - XẢ TIGI RESURRECTION
+                                        970ml -
+                                        Phiên
+                                        bản
+                                        mới 2021</a>
+                                    <p class="product__price--new">780,000₫ <span class="product__price--old">1.500.000₫
+                                        </span> </p>
+                                </div>
+
+                            </div>
+
+                            <div class="product__item">
+                                <a href="#" class="product__thumb">
+                                    <img src="./assets/img/Detail/product-3.png" alt=""
+                                        class="product__photo img-responsive">
+                                </a>
+
+                                <div class="product__detail">
+                                    <a href="#" class="product__link">Bộ đôi DẦU GỘI - XẢ TIGI RESURRECTION
+                                        970ml -
+                                        Phiên
+                                        bản
+                                        mới 2021</a>
+                                    <p class="product__price--new">780,000₫ <span class="product__price--old">1.500.000₫
+                                        </span> </p>
+                                </div>
+
+                            </div>
+
+                            <div class="product__item">
+                                <a href="#" class="product__thumb">
+                                    <img src="./assets/img/Detail/product-4.png" alt=""
+                                        class="product__photo img-responsive">
+                                </a>
+
+                                <div class="product__detail">
+                                    <a href="#" class="product__link">Bộ đôi DẦU GỘI - XẢ TIGI RESURRECTION
+                                        970ml -
+                                        Phiên
+                                        bản
+                                        mới 2021</a>
+                                    <p class="product__price--new">780,000₫ <span class="product__price--old">1.500.000₫
+                                        </span> </p>
+                                </div>
+
+                            </div>
+
+                            <div class="product__item">
+                                <a href="#" class="product__thumb">
+                                    <img src="./assets/img/Detail/product-2.png" alt=""
+                                        class="product__photo img-responsive">
+                                </a>
+
+                                <div class="product__detail">
+                                    <a href="#" class="product__link">Bộ đôi DẦU GỘI - XẢ TIGI RESURRECTION
+                                        970ml -
+                                        Phiên
+                                        bản
+                                        mới 2021</a>
+                                    <p class="product__price--new">780,000₫ <span class="product__price--old">1.500.000₫
+                                        </span> </p>
+                                </div>
+
+                            </div>
+
+                            <div class="product__item">
+                                <a href="#" class="product__thumb">
+                                    <img src="./assets/img/Detail/product-3.png" alt=""
+                                        class="product__photo img-responsive">
+                                </a>
+
+                                <div class="product__detail">
+                                    <a href="#" class="product__link">Bộ đôi DẦU GỘI - XẢ TIGI RESURRECTION
+                                        970ml -
+                                        Phiên
+                                        bản
+                                        mới 2021</a>
+                                    <p class="product__price--new">780,000₫ <span class="product__price--old">1.500.000₫
+                                        </span> </p>
+                                </div>
+
+                            </div>
+
+                            <div class="product__item">
+                                <a href="#" class="product__thumb">
+                                    <img src="./assets/img/Detail/product-4.png" alt=""
+                                        class="product__photo img-responsive">
+                                </a>
+
+                                <div class="product__detail">
+                                    <a href="#" class="product__link">Bộ đôi DẦU GỘI - XẢ TIGI RESURRECTION
+                                        970ml -
+                                        Phiên
+                                        bản
+                                        mới 2021</a>
+                                    <p class="product__price--new">780,000₫ <span class="product__price--old">1.500.000₫
+                                        </span> </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </section>
+
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: true
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+    </script>
+</body>
+
 </html>
