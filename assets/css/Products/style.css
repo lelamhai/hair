@@ -115,11 +115,12 @@ a {
 }
 
 /* sidebar */
-.product__sidebar-list{
-    background-color:#fff;
+
+.product__sidebar-list {
+    background-color: #fff;
 }
 
-.product__sidebar-item{
+.product__sidebar-item {
     padding: 15px;
     font-size: 16px;
     font-weight: 600;
@@ -127,8 +128,13 @@ a {
     cursor: pointer;
 }
 
+.product__sidebar-item:hover {
+    background-color: #d1cece;
+}
+
 /* nav responsive */
-.product__nav{
+
+.product__nav {
     display: none;
 }
 
@@ -153,13 +159,14 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
-    .product__nav{
+    .product__nav {
         display: block;
     }
-    .product__sidebar{
+    .product__sidebar {
         display: none;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .product__heading {
         font-size: 20px;
