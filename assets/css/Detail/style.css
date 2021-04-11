@@ -235,7 +235,11 @@ input {
     display: none;
 }
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (min-width: 1023px) {
+    .detail-product__right-value{
+        flex: 2;
+    }
+}
 
 @media only screen and (max-width: 576px) {
     .detail-product__right-quality {
