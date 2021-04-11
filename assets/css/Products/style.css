@@ -141,7 +141,6 @@ a {
 .product__nav-list {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 30px;
     overflow-x: auto;
 }
@@ -171,7 +170,6 @@ a {
     .product__heading {
         font-size: 20px;
     }
-    .product__nav-list {}
     .product__nav-item {
         font-size: 13px;
         padding: 5px;
