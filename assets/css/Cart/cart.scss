@@ -229,8 +229,21 @@
 
 /* ================================Responsive===================================== */
 
+@media screen and (max-width: 800px) {
+  
+  .content-cart .left-main .table-cart .row-product .info-pro .name-product h3 {
+    width: 90%;
+    padding-right: 15px;
+  }
+  .content-cart .left-main .table-cart .row-product .info-pro .delete-product {
+    top: 17px;
+  }
+}
+
 /* iphone */
 @media screen and (max-width: 480px) {
+  
+  
   .content-cart{
     flex-direction: column;
   }
