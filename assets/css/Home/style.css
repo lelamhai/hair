@@ -74,6 +74,12 @@ a {
     position: relative;
 }
 
+.header__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header__navbar-list {
     display: flex;
     justify-content: center;
@@ -90,21 +96,28 @@ a {
 .header__login {
     display: flex;
     align-items: center;
-    margin: 10px auto;
     justify-content: center;
     border-radius: 3px;
     background-color: gold;
-    padding: 3px 0;
+    padding: 7px;
     max-width: 130px;
 }
 
-.header__logo{
+.header__logo {
     max-width: 100px;
 }
 
 .header__login-icon {
     margin-right: 5px;
 }
+
+
+#item-dropdown,.header__navbar-logo,.header__navbar-bars{
+    display: none;
+}
+
+
+
 
 .owl-dots {
     display: none;
@@ -150,7 +163,6 @@ section {
 
 .brand__item {
     display: flex;
-    
 }
 
 .product__item {
@@ -205,7 +217,7 @@ section {
     font-size: 14px;
 }
 
-.footer-wp{
+.footer-wp {
     border-bottom: 1px solid #5b5b5b;
 }
 
@@ -232,38 +244,38 @@ section {
     align-items: center;
     justify-content: center;
     color: #5b5b5b;
-    transition: all 0,3s linear;
+    transition: all 0, 3s linear;
 }
 
 .footer__link-icon.facebook:hover {
     background-color: #3b5998;
-    transition: all 0,3s linear;
+    transition: all 0, 3s linear;
     color: #fff;
 }
 
 .footer__link-icon.instagram:hover {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    transition: all 0,3s linear;
+    transition: all 0, 3s linear;
     color: #fff;
 }
 
 .footer__link-icon.youtube:hover {
     background-color: #F70000;
-    transition: all 0,3s linear;
+    transition: all 0, 3s linear;
     color: #fff;
 }
 
 .footer__link-icon.twitter:hover {
     background-color: #1C9CEA;
     color: #fff;
-    transition: all 0,3s linear;
+    transition: all 0, 3s linear;
 }
 
 .footer__item {
     margin: 10px 0;
 }
 
-.footer__link:hover{
+.footer__link:hover {
     color: #dea43e;
 }
 
@@ -271,31 +283,74 @@ section {
     margin-right: 20px;
 }
 
-.copyright{
+.copyright {
     text-align: center;
     padding-top: 30px;
 }
 
+
+
 @media only screen and (max-width: 1023px) {
-    .brand__item{
+    .brand__item {
         flex-wrap: wrap;
     }
     .product__item {
         flex: 33.33%;
         max-width: 33.33%;
     }
-    .hair-hot__item{
+    .hair-hot__item {
         flex: 33.33%;
     }
-    
 
-    .header__navbar{
+    .header__content{
+        justify-content: space-between;
+    }
+    .header__navbar {
+        display: none;
         position: absolute;
         width: 100%;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        padding: 30px 0;
+        background-color: #fff;
+        align-items: flex-start;
     }
-
-    .header__navbar-list{
+    .header__navbar-list {
+        flex-direction: column;
         width: 100%;
+    }
+    .header__navbar-item {
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .header__login {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .header__navbar-bars {
+        font-size: 24px;
+        display: block;
+        text-align: right;
+    }
+    .header__navbar-bars--remove {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        font-size: 24px;
+        display: block;
+    }
+    [type=checkbox]:checked~.header__navbar {
+        display: block;
+    }
+    [type=checkbox]:not(:checked), [type=checkbox]:checked {
+        position: absolute;
+        left: -9999px;
+    }
+    [type=checkbox]:not(:checked)+label, [type=checkbox]:checked+label {
+        position: relative;
+        cursor: pointer;
     }
 }
 
@@ -307,14 +362,12 @@ section {
     .heading-title {
         font-size: 16px;
     }
-    .heading-more{
+    .heading-more {
         font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 576px) {
-
-}
+@media only screen and (max-width: 576px) {}
 
 @media only screen and (max-width: 374px) {
     .product__item {
