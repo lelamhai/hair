@@ -389,6 +389,10 @@ section {
     margin: 0;
 }
 
+.ten-step__nav-list{
+    display: none;
+}
+
 @media only screen and (max-width: 1023px) {
     .brand__item {
         flex-wrap: wrap;
