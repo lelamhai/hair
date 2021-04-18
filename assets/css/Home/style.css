@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --pd: 10px;
     --ticket-ml: 20px;
     --red: red;
@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-}
+} */
 
 ul {
     padding-left: 0;
@@ -506,3 +506,72 @@ section {
         max-width: 100%;
     }
 }
+
+/* ============= Step 10 =============== */
+.wrap-step-ten {
+    display: flex;
+}
+  
+.thumbnails {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    line-height: 0; 
+}
+
+.thumbnails li {
+    flex: auto; 
+}
+
+.thumbnails a {
+    display: block; 
+}
+
+.thumbnails img {
+    height: 20vmin;
+    object-fit: cover;
+    object-position: top; 
+}
+  
+.slides {
+    overflow: hidden;
+    width: 80%;
+    height: 100vmin; 
+}
+
+.slides li {
+    width: 75vmin;
+    height: 100vmin;
+    position: absolute;
+    z-index: 1; 
+}
+
+.slides img {
+    height: 100vmin;
+    object-fit: cover;
+    object-position: top; 
+}
+  
+.slides li:target {
+    z-index: 3;
+    -webkit-animation: slide 1s 1; 
+}
+  
+.slides li:not(:target) {
+    -webkit-animation: hidden 1s 1; 
+}
+  
+@keyframes slide {
+    0% {
+      transform: translateX(-100%); }
+    100% {
+      transform: translateX(0%); } 
+}
+@keyframes hidden {
+    0% {
+      z-index: 2; }
+    100% {
+      z-index: 2; } 
+}
+  
+  /*# sourceMappingURL=scss.css.map */
