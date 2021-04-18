@@ -77,3 +77,15 @@ button {
 
 .nav-tabs li {
   flex-basis: 50%; }
+
+.error-input {
+  border: 1px solid red !important;
+  background-color: #ffb1b1 !important; }
+
+.cappcha-input {
+  padding-top: 15px; }
+
+#txtInput,
+#txtInput1 {
+  border: 1px solid #9e9393;
+  width: 100px; }
