@@ -18,12 +18,15 @@
 
 .form-container .account-input {
   position: relative; }
-  .form-container .account-input i {
+  .form-container .account-input .icon-form {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 10px;
     color: #495057; }
+    .form-container .account-input .icon-form img {
+      width: 20px;
+      height: auto; }
 
 .account-input input,
 .account-input textarea {
@@ -89,3 +92,18 @@ button {
 #txtInput1 {
   border: 1px solid #9e9393;
   width: 100px; }
+
+.nav-tabs {
+  border: unset; }
+  .nav-tabs li a {
+    font-weight: 600;
+    color: #555; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: unset;
+  border-bottom: 2px solid #555; }
+
+.nav-tabs > li > a:hover {
+  border-color: unset; }
