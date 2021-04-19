@@ -20,13 +20,13 @@
   position: relative; }
   .form-container .account-input .icon-form {
     position: absolute;
-    top: 50%;
+    top: 44%;
     transform: translateY(-50%);
     left: 10px;
     color: #495057; }
     .form-container .account-input .icon-form img {
       width: 20px;
-      height: auto; }
+      height: 20px; }
 
 .account-input input,
 .account-input textarea {

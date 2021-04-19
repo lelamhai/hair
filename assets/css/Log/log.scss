@@ -26,13 +26,13 @@
     position: relative;
     .icon-form {
       position: absolute;
-      top: 50%;
+      top: 44%;
       transform: translateY(-50%);
       left: 10px;
       color: #495057;
       img {
         width: 20px;
-        height: auto;
+        height: 20px;
       }
     }
   }
@@ -134,7 +134,6 @@ button {
   border-bottom: 2px solid #555;
 }
 
-
-.nav-tabs>li>a:hover {
-    border-color:unset;
+.nav-tabs > li > a:hover {
+  border-color: unset;
 }
