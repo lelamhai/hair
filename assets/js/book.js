@@ -11,5 +11,16 @@ $(document).ready(function () {
     });
   }
 
+  function change_position() {
+    let position = 0;
+    $(".msg-box").each(function (index, element) {
+      position += 1;
+      if( (position % 2) == 0) {
+        $(this).addClass('right');
+      }
+      
+    });
+  }
   change_status();
+  change_position();
 });
