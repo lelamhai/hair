@@ -79,33 +79,37 @@ b {
       display: block;
       width: 50px;
       height: 50px;
-      border: 1px solid black;
+      border: 2px solid #7cde56;
       border-radius: 50%;
       cursor: pointer; }
-  /* line 96, book.scss */
+  /* line 97, book.scss */
   .list-avatar .list-avatar-item:active {
     background-color: #e5e5e5;
     opacity: 0.7; }
-  /* line 100, book.scss */
+  /* line 101, book.scss */
   .list-avatar .list-avatar-item:hover {
     background-color: #e4e4e4; }
 
-/* line 107, book.scss */
+/* line 108, book.scss */
 .list-avatar-item span img {
   margin: 0px auto; }
-/* line 111, book.scss */
+/* line 112, book.scss */
 .list-avatar-item .user-name {
   overflow: hidden; }
 
-/* line 118, book.scss */
+/* line 117, book.scss */
+.stylish-active {
+  background-color: #9f9a9a !important; }
+
+/* line 121, book.scss */
 .schedule {
   text-align: center;
   margin-top: 10px; }
-  /* line 121, book.scss */
+  /* line 124, book.scss */
   .schedule b {
     padding: 5px 0px; }
 
-/* line 126, book.scss */
+/* line 129, book.scss */
 .slot {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -113,79 +117,80 @@ b {
   border-top: unset;
   border-collapse: unset;
   border-spacing: 4px; }
-  /* line 134, book.scss */
+  /* line 137, book.scss */
   .slot tr td {
     text-align: center;
     padding: 10px 32px;
     border-bottom: 3px solid green; }
-  /* line 140, book.scss */
+  /* line 143, book.scss */
   .slot tr .het-slot {
     border-bottom: 3px solid red; }
 
-/* line 146, book.scss */
+/* line 149, book.scss */
 .slot tbody tr td:hover {
   background-color: #b7d4f0; }
 
-/* line 150, book.scss */
+/* line 153, book.scss */
 .slot-status {
   padding-top: 5px; }
 
-/* line 154, book.scss */
+/* line 157, book.scss */
 .nav > li > a {
   padding: 10px 30px;
   color: #555; }
 
-/* line 160, book.scss */
+/* line 163, book.scss */
 .nav-tabs {
   display: flex; }
-  /* line 163, book.scss */
+  /* line 166, book.scss */
   .nav-tabs li {
     flex-basis: 600px; }
 
-/* line 168, book.scss */
+/* line 171, book.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
   background-color: #555;
   color: #fff; }
 
-/* line 174, book.scss */
+/* line 177, book.scss */
 .modal-header {
   text-align: center; }
-  /* line 176, book.scss */
+  /* line 179, book.scss */
   .modal-header img {
     width: 100px;
     height: 100px;
     border: 1px solid black;
     border-radius: 50%;
     cursor: pointer; }
-  /* line 184, book.scss */
+  /* line 187, book.scss */
   .modal-header .popup-name {
     padding: 10px 0px;
     text-align: center; }
-  /* line 189, book.scss */
+  /* line 192, book.scss */
   .modal-header .rate i {
     color: #ff9321; }
-  /* line 193, book.scss */
+  /* line 196, book.scss */
   .modal-header .close {
     position: absolute;
     top: 10px;
     left: 575px; }
 
-/* line 201, book.scss */
+/* line 204, book.scss */
 .modal-body .list-cmt {
   height: 300px;
   overflow: scroll;
   border: 1px solid #e2e2e2;
   padding: 0px 10px;
   padding-top: 10px; }
-  /* line 207, book.scss */
+  /* line 210, book.scss */
   .modal-body .list-cmt .msg-box {
     position: relative;
     border: 1px solid #555;
     border-radius: 12px;
     border-bottom-right-radius: unset;
-    width: 40%;
-    padding: 10px; }
-    /* line 215, book.scss */
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px; }
+    /* line 219, book.scss */
     .modal-body .list-cmt .msg-box .cmt-user {
       position: absolute;
       top: -10px;
@@ -195,37 +200,37 @@ b {
       margin: 0px;
       width: auto;
       padding: 0px 3px; }
-    /* line 225, book.scss */
+    /* line 229, book.scss */
     .modal-body .list-cmt .msg-box p {
       width: auto;
       margin: 0px;
       font-size: 13px; }
-  /* line 231, book.scss */
+  /* line 235, book.scss */
   .modal-body .list-cmt .right {
     text-align: right;
     border-radius: 12px;
     border-bottom-left-radius: unset;
-    left: 315px; }
-    /* line 236, book.scss */
+    left: 105px; }
+    /* line 240, book.scss */
     .modal-body .list-cmt .right .cmt-user {
       top: -10px;
-      left: 150px; }
+      left: 360px; }
 
 @media only screen and (max-device-width: 1366px) and (min-device-width: 1024px) and (orientation: landscape) {
-  /* line 255, book.scss */
+  /* line 259, book.scss */
   .book-container-flex, .slot {
     width: 100%; }
 
-  /* line 259, book.scss */
+  /* line 263, book.scss */
   .list-avatar {
     max-width: 100%;
     width: 100%; } }
 @media only screen and (max-device-width: 414px) and (min-device-width: 375px) and (orientation: portrait) {
-  /* line 272, book.scss */
+  /* line 276, book.scss */
   .book-container-flex, .slot {
     width: 100%; }
 
-  /* line 276, book.scss */
+  /* line 280, book.scss */
   .list-avatar {
     max-width: 100%;
     width: 100%; } }

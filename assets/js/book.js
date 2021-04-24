@@ -21,6 +21,21 @@ $(document).ready(function () {
       
     });
   }
+
+  function select_stylish(){
+    $(".list-avatar-item").click(function () {
+      let select = $(this);
+      // $(".list-avatar-item").css("background-color", "unset")
+      // select.css("background-color", "rgb(159, 154, 154)")
+      $(".list-avatar-item").removeClass('stylish-active');
+      $(select).addClass('stylish-active');
+      
+    });
+  }
+
+
+
   change_status();
   change_position();
+  select_stylish();
 });
