@@ -237,7 +237,6 @@ section {
     padding: 15px;
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
     margin-bottom: 20px;
-    overflow-y: scroll;
     height: 500px;
 }
 
@@ -246,6 +245,11 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    cursor: pointer;
+}
+
+.ten-step__sidebar-item:hover{
+    color: #dea43e;
 }
 
 .ten-step__sidebar-desc, .ten-step__sidebar-price {
