@@ -185,6 +185,9 @@
     .row.f-col-reverse {
         flex-direction: column-reverse;
     }
+    .s-0{
+        display: none;
+    }
     .s-12 {
         flex: 0 0 100%;
         max-width: 100%;
