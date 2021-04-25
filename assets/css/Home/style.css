@@ -106,8 +106,8 @@ section {
     background-color: #FDFDFD;
     margin-bottom: 30px;
     padding: 15px;
-    flex: 25%;
-    max-width: 25%;
+    /* flex: 25%;
+    max-width: 25%; */
 }
 
 .product__item:hover {
