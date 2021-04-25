@@ -196,7 +196,7 @@
 
             <section class="ten-step-mobile">
                 <div class="container">
-                    <div class="owl-carousel owl-theme">
+                    <div class="ten-step-mobile-slider owl-carousel owl-theme">
                         <div class="ten-step-mobile-box">
                             <div class="ten-step__sidebar-item" onclick="currentSlide(1)">
                                 <p class="ten-step__sidebar-desc">Bước 1. Massage khai huyệt điều hòa (mới)</p>
@@ -606,7 +606,7 @@
             dots: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2
                 },
                 600: {
                     items: 3
@@ -615,7 +615,25 @@
                     items: 4
                 }
             }
-        })
+        });
+
+        $('.ten-step-mobile-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
     </script>
 
     <script>
