@@ -27,8 +27,8 @@ $(document).ready(function () {
       let select = $(this);
       // $(".list-avatar-item").css("background-color", "unset")
       // select.css("background-color", "rgb(159, 154, 154)")
-      $(".list-avatar-item").removeClass('stylish-active');
-      $(select).addClass('stylish-active');
+      $(".list-avatar-item").removeClass('stylish-select');
+      $(select).addClass('stylish-select');
       
     });
   }
