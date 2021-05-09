@@ -25,8 +25,14 @@ window.addEventListener("load", event => {
 
         if (currentmenuItem.classList.contains('open')) {
             currentmenuItem.classList.remove('open');
+            let icon = currentmenuItem.querySelector('.left__title i');
+            console.log(icon);
+            icon.className='fas fa-plus';
         } else {
             currentmenuItem.classList.add('open');
+            let icon = currentmenuItem.querySelector('.left__title i');
+            console.log(icon);
+            icon.className='fas fa-minus';
         }
     };
 })
