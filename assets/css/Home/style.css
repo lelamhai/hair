@@ -132,6 +132,10 @@ section {
     color: #dea43e;
 }
 
+.product__link--active {
+    color: #dea43e;
+}
+
 .product__price--new {
     font-size: 14px;
     font-weight: 800;
@@ -250,6 +254,9 @@ section {
     color: #dea43e;
 }
 
+.ten-step__sidebar-item--active {
+    color: #dea43e;
+}
 .ten-step__sidebar-desc, .ten-step__sidebar-price {
     margin: 0;
 }
