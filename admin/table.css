@@ -1,0 +1,109 @@
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #5bc0de;
+    color: #fff;
+    border-color: #46b8da;
+    border-radius: 6px; ;
+    width: 40%;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -130px;
+    left: 50%;
+    margin-left: -80px;
+    padding: 0%;
+    display: none;
+  }
+  .popup_date {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    border-color: #46b8da;
+    border-radius: 6px; ;
+    width: 10%;
+  }
+  
+  /* The actual popup */
+ .popuptext_date {
+    visibility: hidden;
+    width: 160px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -130px;
+    left: 50%;
+    margin-left: 30px;
+    padding: 0%;
+    display: none;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    /* content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent; */
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  .popup_date .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  .btton {
+      border: 1px solid #000;
+      border-radius: 6px;
+      margin: 10px;
+    background-color: #5bc0de;
+    color: #fff;
+      
+
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

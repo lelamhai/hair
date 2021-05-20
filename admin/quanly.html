@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/NewPost.css">
     <link rel="stylesheet" href="../assets/fonts/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="../assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -67,10 +68,270 @@
                     <h5 class="right__head-post-title">Add New Posts</h5>
                     <div class="right__content d-flex">
                         <div class="right__add-post">
+                            <div>
+                                <div class="popup_date" onclick="myFunction()">
+                                    <span class="popuptext_date" id="myPopup">
+                                        <table >
+                                            <tbody>
+                                              <tr>
+                                                <td>13/05/2021</td>
+                                              </tr>
+                                              <tr>
+                                                <td>14/05/2021</td>
+                                              </tr>
+                                              <tr>
+                                                <td>15/05/2021</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </span><button class="btton">13/05/2021</button></div>
+                                    <script>
+                                        function myFunction() {
+                                        var popup_date = document.getElementById("myPopup");
+                                        popup_date.classList.toggle("show");
+                                        }
+                                        </script>
+                                <button class="btton">Tìm</button>
+                            </div>
                             <div class="right__head-new-post">
                                 <input type="text" name="" id="" class="right__head-new-post-input"
                                     placeholder="Enter title here">
                             </div>
+                            <!-- lam tiep o day -->
+                            <div class="table-responsive">          
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th>Stylist</th>
+                                      <th>Dịch Vụ</th>
+                                      <th>Đổi Thời Gian</th>
+                                      <th>Hủy Booking</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Nguyễn Văn A 
+                                        <div class="popup" onclick="myFunction()">Đổi Style
+                                            <span class="popuptext" id="myPopup">
+                                                <table >
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>Nguyễn Văn A</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Nguyễn Văn A</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Nguyễn Văn A</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                            </span>
+                                          </div>                                          
+                                            <script>
+                                                function myFunction() {
+                                                var popup = document.getElementById("myPopup");
+                                                popup.classList.toggle("show");
+                                                }
+                                                </script>
+                                      </td>
+                                      <td>Cắt Combo 10 ngày</td>
+                                      <td>13/05/2021 <button style="padding: 0; width: 50%; height: 30px;" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Đổi ngày</button>
+                                        <div class="modal fade" id="myModal" role="dialog">
+                                            <div class="modal-dialog">
+                                              <!-- Modal content-->
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                  <div class="schedule">
+                                                    <b>CHỌN NGÀY GIỜ CẮT (301 TRƯƠNG ĐỊNH)</b>
+                                                    <div class="select-day">
+                                                      <ul class="nav nav-tabs">
+                                                        <li class="active">
+                                                          <a data-toggle="tab" href="#today">
+                                                            <b>Hôm nay</b>
+                                                            <span>Thứ Tư, 27/06</span>
+                                                          </a>                         
+                                                        </li>
+                                                        <li>
+                                                          <a data-toggle="tab" href="#tomorrow">
+                                                            <b>Ngày mai</b>
+                                                            <span>Thứ Năm, 28/06</span>
+                                                          </a>
+                                                        </li>
+                                                        <li>
+                                                          <a data-toggle="tab" href="#after-tomorrow">
+                                                            <b>Ngày kia</b>
+                                                            <span>Thứ Sáu, 29/06</span>
+                                                          </a>
+                                                        </li>
+                                                      </ul>
+                                                        <div class="tab-content">
+                                                          <div id="today" class="tab-pane fade in active">
+                                                            <table class="slot">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td>8h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>9h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>9h30<br><span class="slot-status">Hết chỗ</span></td>
+                                                                  <td>10h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>10h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>11h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>11h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>12h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>12h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>13h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>13h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>14h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>14h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>15h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>15h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>16h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>16h30<br><span class="slot-status">Hết chỗ</span></td>
+                                                                  <td>17h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>17h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>18h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>18h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>19h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>19h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>20h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>20h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                              </tbody>
+                                                              </table>
+                                                          </div>
+                                                          <div id="tomorrow" class="tab-pane fade">
+                                                            <table class="slot" >
+                                                              <tbody> 
+                                                                <tr>
+                                                                  <td>8h30<br><span class="slot-status">Hết chỗ</span></td>
+                                                                  <td>9h00<br><span class="slot-status">Hết chỗ</span></td>
+                                                                  <td>9h30<br><span class="slot-status">Hết chỗ</span></td>
+                                                                  <td>10h00<br><span class="slot-status">Hết chỗ</span></td>
+                                                                  <td>10h30<br><span class="slot-status">Hết chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>11h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>11h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>12h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>12h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>13h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>13h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>14h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>14h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>15h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>15h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>16h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>16h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>17h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>17h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>18h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>18h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>19h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>19h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>20h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>20h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                              </tbody>
+                                                              </table>
+                                                          </div>
+                                                          <div id="after-tomorrow" class="tab-pan fade">
+                                                            <table class="slot" >
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td>8h30<br><span class="slot-status">Hết chỗ</span></td>
+                                                                  <td>9h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>9h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>10h00<br><span class="slot-status">Hết chỗ</span></td>
+                                                                  <td>10h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>11h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>11h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>12h00<br><span class="slot-status">Hết chỗ</span></td>
+                                                                  <td>12h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>13h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>13h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>14h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>14h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>15h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>15h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>16h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>16h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>17h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>17h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>18h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>18h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>19h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>19h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>20h00<br><span class="slot-status">Còn chỗ</span></td>
+                                                                  <td>20h30<br><span class="slot-status">Còn chỗ</span></td>
+                                                                </tr>
+                                                              </tbody>
+                                                              </table>
+                                                          </div>
+                                                
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
+                                              
+                                            </div>
+                                          </div>
+                                      </td>
+                                      <td><button>X</button></td>
+                                    </tr>
+                                  </tbody>
+                                  <tbody>
+                                    <tr>
+                                      <td>Nguyễn Văn A</td>
+                                      <td>Cắt Combo 10 ngày</td>
+                                      <td>13/05/2021 <button id="change_date">Đổi Ngày</button></td>
+                                      <td><button>X</button></td>
+                                    </tr>
+                                  </tbody>
+                                  <tbody>
+                                    <tr>
+                                      <td>Nguyễn Văn A</td>
+                                      <td>Cắt Combo 10 ngày</td>
+                                      <td>13/05/2021 <button id="change_date">Đổi Ngày</button></td>
+                                      <td><button>X</button></td>
+                                    </tr>
+                                  </tbody>
+                                  <tbody>
+                                    <tr>
+                                      <td>Nguyễn Văn A</td>
+                                      <td>Cắt Combo 10 ngày</td>
+                                      <td>13/05/2021 <button id="change_date">Đổi Ngày</button></td>
+                                      <td><button>X</button></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                </div>
                         </div>
                         <div class="right__add-image">
                             <h5 class="right__add-image-title">Feature Image</h5>
@@ -103,6 +364,10 @@
         };
       </script>
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="table.css">
 </body>
 
 </html>
+
