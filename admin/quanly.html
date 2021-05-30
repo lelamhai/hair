@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="css/NewPost.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="../assets/fonts/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="../assets/fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="table.css">
 </head>
 
 <body>
@@ -22,10 +23,10 @@
                         <span></span>
                     </span>
                     <div class="left__content">
-                        <div class="left__logo"><a href="index.html">Dashboard</a> </div>
+                        <div class="left__logo">Dashboard</div>
                         <div class="left__profile">
                             <div class="left__image"><img src="assets/avatar.jpg" alt=""></div>
-                            <p class="left__name">Bùi Ngọc Tuấn</p>
+                            <p class="left__name">Hatsune Miku</p>
                         </div>
                         <ul class="left__menu">
                             <li class="left__menuItem">
@@ -35,8 +36,8 @@
 
                                 </div>
                                 <div class="left__text">
-                                    <a class="left__link" href="#">Chèn Sản Phẩm</a>
-                                    <a class="left__link" href="#">Xem Sản Phẩm</a>
+                                    <a class="left__link" href="insert_product.html">Chèn Sản Phẩm</a>
+                                    <a class="left__link" href="view_product.html">Xem Sản Phẩm</a>
                                 </div>
                             </li>
                             <li class="left__menuItem">
@@ -44,8 +45,8 @@
                                     <i class="fas fa-plus"></i>
                                 </div>
                                 <div class="left__text">
-                                    <a class="left__link" href="#">Chèn Danh Mục</a>
-                                    <a class="left__link" href="#">Xem Danh Mục</a>
+                                    <a class="left__link" href="insert_p_category.html">Chèn Danh Mục</a>
+                                    <a class="left__link" href="view_p_category.html">Xem Danh Mục</a>
                                 </div>
                             </li>
                             <li class="left__menuItem">
@@ -53,8 +54,8 @@
                                     <i class="fas fa-plus"></i>
                                 </div>
                                 <div class="left__text">
-                                    <a class="left__link" href="#">Chèn Thể Loại</a>
-                                    <a class="left__link" href="#">Xem Thể Loại</a>
+                                    <a class="left__link" href="insert_category.html">Chèn Thể Loại</a>
+                                    <a class="left__link" href="view_category.html">Xem Thể Loại</a>
                                 </div>
                             </li>
                             <li class="left__menuItem">
@@ -65,309 +66,242 @@
                     </div>
                 </div>
                 <section class="right">
-                    <h5 class="right__head-post-title">Add New Posts</h5>
-                    <div class="right__content d-flex">
-                        <div class="right__add-post">
-                            <div>
-                                <div class="popup_date" onclick="myFunction()">
-                                    <span class="popuptext_date" id="myPopup">
-                                        <table >
-                                            <tbody>
-                                              <tr>
-                                                <td>13/05/2021</td>
-                                              </tr>
-                                              <tr>
-                                                <td>14/05/2021</td>
-                                              </tr>
-                                              <tr>
-                                                <td>15/05/2021</td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                    </span><button class="btton">13/05/2021</button></div>
-                                    <script>
-                                        function myFunction() {
-                                        var popup_date = document.getElementById("myPopup");
-                                        popup_date.classList.toggle("show");
-                                        }
-                                        </script>
-                                <button class="btton">Tìm</button>
+                    <div class="right__content">
+                        <div class="right__head d-flex">
+                            <div class="right__head-post d-flex">
+                                <h5 class="right__head-post-title">Đặt vé</h5>
                             </div>
-                            <div class="right__head-new-post">
-                                <input type="text" name="" id="" class="right__head-new-post-input"
-                                    placeholder="Enter title here">
-                            </div>
-                            <!-- lam tiep o day -->
-                            <div class="table-responsive">          
-                                <table class="table">
-                                  <thead>
-                                    <tr>
-                                      <th>Stylist</th>
-                                      <th>Dịch Vụ</th>
-                                      <th>Đổi Thời Gian</th>
-                                      <th>Hủy Booking</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>Nguyễn Văn A 
-                                        <div class="popup" onclick="myFunction()">Đổi Style
-                                            <span class="popuptext" id="myPopup">
-                                                <table >
-                                                    <tbody>
-                                                      <tr>
-                                                        <td>Nguyễn Văn A</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Nguyễn Văn A</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Nguyễn Văn A</td>
-                                                      </tr>
-                                                    </tbody>
-                                                  </table>
-                                            </span>
-                                          </div>                                          
-                                            <script>
-                                                function myFunction() {
-                                                var popup = document.getElementById("myPopup");
-                                                popup.classList.toggle("show");
-                                                }
-                                                </script>
-                                      </td>
-                                      <td>Cắt Combo 10 ngày</td>
-                                      <td>13/05/2021 <button style="padding: 0; width: 50%; height: 30px;" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Đổi ngày</button>
-                                        <div class="modal fade" id="myModal" role="dialog">
-                                            <div class="modal-dialog">
-                                              <!-- Modal content-->
-                                              <div class="modal-content">
-                                                <div class="modal-header">
-                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                  <div class="schedule">
-                                                    <b>CHỌN NGÀY GIỜ CẮT (301 TRƯƠNG ĐỊNH)</b>
-                                                    <div class="select-day">
-                                                      <ul class="nav nav-tabs">
-                                                        <li class="active">
-                                                          <a data-toggle="tab" href="#today">
-                                                            <b>Hôm nay</b>
-                                                            <span>Thứ Tư, 27/06</span>
-                                                          </a>                         
-                                                        </li>
-                                                        <li>
-                                                          <a data-toggle="tab" href="#tomorrow">
-                                                            <b>Ngày mai</b>
-                                                            <span>Thứ Năm, 28/06</span>
-                                                          </a>
-                                                        </li>
-                                                        <li>
-                                                          <a data-toggle="tab" href="#after-tomorrow">
-                                                            <b>Ngày kia</b>
-                                                            <span>Thứ Sáu, 29/06</span>
-                                                          </a>
-                                                        </li>
-                                                      </ul>
-                                                        <div class="tab-content">
-                                                          <div id="today" class="tab-pane fade in active">
-                                                            <table class="slot">
-                                                              <tbody>
-                                                                <tr>
-                                                                  <td>8h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>9h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>9h30<br><span class="slot-status">Hết chỗ</span></td>
-                                                                  <td>10h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>10h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>11h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>11h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>12h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>12h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>13h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>13h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>14h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>14h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>15h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>15h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>16h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>16h30<br><span class="slot-status">Hết chỗ</span></td>
-                                                                  <td>17h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>17h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>18h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>18h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>19h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>19h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>20h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>20h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                              </tbody>
-                                                              </table>
-                                                          </div>
-                                                          <div id="tomorrow" class="tab-pane fade">
-                                                            <table class="slot" >
-                                                              <tbody> 
-                                                                <tr>
-                                                                  <td>8h30<br><span class="slot-status">Hết chỗ</span></td>
-                                                                  <td>9h00<br><span class="slot-status">Hết chỗ</span></td>
-                                                                  <td>9h30<br><span class="slot-status">Hết chỗ</span></td>
-                                                                  <td>10h00<br><span class="slot-status">Hết chỗ</span></td>
-                                                                  <td>10h30<br><span class="slot-status">Hết chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>11h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>11h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>12h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>12h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>13h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>13h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>14h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>14h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>15h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>15h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>16h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>16h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>17h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>17h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>18h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>18h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>19h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>19h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>20h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>20h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                              </tbody>
-                                                              </table>
-                                                          </div>
-                                                          <div id="after-tomorrow" class="tab-pan fade">
-                                                            <table class="slot" >
-                                                              <tbody>
-                                                                <tr>
-                                                                  <td>8h30<br><span class="slot-status">Hết chỗ</span></td>
-                                                                  <td>9h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>9h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>10h00<br><span class="slot-status">Hết chỗ</span></td>
-                                                                  <td>10h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>11h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>11h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>12h00<br><span class="slot-status">Hết chỗ</span></td>
-                                                                  <td>12h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>13h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>13h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>14h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>14h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>15h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>15h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>16h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>16h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>17h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>17h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>18h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>18h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>19h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>19h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>20h00<br><span class="slot-status">Còn chỗ</span></td>
-                                                                  <td>20h30<br><span class="slot-status">Còn chỗ</span></td>
-                                                                </tr>
-                                                              </tbody>
-                                                              </table>
-                                                          </div>
-                                                
-                                                        </div>
-                                                    </div>
-                                                    
-                                                </div>
-                                                <div class="modal-footer">
-                                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                </div>
-                                              </div>
-                                              
-                                            </div>
-                                          </div>
-                                      </td>
-                                      <td><button>X</button></td>
-                                    </tr>
-                                  </tbody>
-                                  <tbody>
-                                    <tr>
-                                      <td>Nguyễn Văn A</td>
-                                      <td>Cắt Combo 10 ngày</td>
-                                      <td>13/05/2021 <button id="change_date">Đổi Ngày</button></td>
-                                      <td><button>X</button></td>
-                                    </tr>
-                                  </tbody>
-                                  <tbody>
-                                    <tr>
-                                      <td>Nguyễn Văn A</td>
-                                      <td>Cắt Combo 10 ngày</td>
-                                      <td>13/05/2021 <button id="change_date">Đổi Ngày</button></td>
-                                      <td><button>X</button></td>
-                                    </tr>
-                                  </tbody>
-                                  <tbody>
-                                    <tr>
-                                      <td>Nguyễn Văn A</td>
-                                      <td>Cắt Combo 10 ngày</td>
-                                      <td>13/05/2021 <button id="change_date">Đổi Ngày</button></td>
-                                      <td><button>X</button></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                                </div>
+                           
                         </div>
-                        <div class="right__add-image">
-                            <h5 class="right__add-image-title">Feature Image</h5>
-                            <input type="file" hidden accept="image/*" id="feature-image" onchange="loadFile(event)">
-                            <div class="show-image">
-                                <img id="output" class="img-responsive" />
 
+                        <div class="right__head-bar d-flex">
+                            <div class="right__head-bar-select">
+                              <div class="wrap-search-time">
+                                <div class="dropdown search-time-left">
+                                  <select class="search-day" name="" id="">
+                                    <option value="">12/12/2020</option>
+                                    <option value="">12/12/2020</option>
+                                    <option value="">12/12/2020</option>
+                                    <option value="">12/12/2020</option>
+                                  </select>
+                                </div>
+        
+                                <div class="search-time-day">
+                                    <button class="search-time-right">Tìm</button>
+                                </div>
+                              </div>
                             </div>
-                            
-                            <p class="right__add-image-notify">Click the image to edit or upload image</p>
-                            <label for="feature-image" class="right__add-image-label">Set feature image</label>
-                            <button class="right__add-image-btn">Upload</button>
+                            <span class="right__head-bar-count"></span>
+                        </div>
+
+                        <div class="right__table">
+                            <div class="right__tableWrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th style="text-align: center;">StyleList</th>
+                                            <th>Dịch vụ</th>
+                                            <th>Thời gian đặt vé</th>
+                                            <th>Hủy lịch</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr class="right__table-item">
+                                            <td class="stylelist" data-label="Email" style="text-align: left;padding-left: 30px;">
+                                              <select class="name" name="" id="">
+                                                <option value="">Nguyễn Văn A</option>
+                                                <option value="">Nguyễn Văn B</option>
+                                                <option value="">Nguyễn Văn B</option>
+                                                <option value="">Nguyễn Văn B</option>
+                                              </select>
+                                            </td>
+                                            <td data-label="Số Hoá Đơn">Combo cắt tóc 10 bước</td>
+                                            <td data-label="ID Sản Phẩm">
+                                              <div class="day-date">13/05/2021</div>
+                                              <button type="button" class="change_date btn btn-primary" data-toggle="modal" data-target="#booking">
+                                                Đổi Ngày
+                                              </button>
+
+                                            </td>
+                                            <td><button><i class="fas fa-times  fa-lg"></i></button></td>
+
+                                        </tr>
+                                        <tr class="right__table-item">
+                                            <td class="stylelist" data-label="Email" style="text-align: left;padding-left: 30px;">
+                                              <select class="name" name="" id="">
+                                                <option value="">Nguyễn Văn A</option>
+                                                <option value="">Nguyễn Văn B</option>
+                                                <option value="">Nguyễn Văn B</option>
+                                                <option value="">Nguyễn Văn B</option>
+                                              </select>
+                                            </td>
+                                            <td data-label="Số Hoá Đơn">Combo cắt tóc 10 bước</td>
+                                            <td data-label="ID Sản Phẩm">
+                                              <div class="day-date">13/05/2021</div>
+                                                <button type="button" class="change_date btn btn-primary" data-toggle="modal" data-target="#booking">
+                                                  Đổi Ngày
+                                                </button>
+                                            </td>
+                                            <td><button><i class="fas fa-times  fa-lg"></i></button></td>
+
+                                        </tr>
+                                        <tr class="right__table-item">
+                                            <td class="stylelist" data-label="Email" style="text-align: left;padding-left: 30px;">
+                                              <select class="name" name="" id="">
+                                                <option value="">Nguyễn Văn A</option>
+                                                <option value="">Nguyễn Văn B</option>
+                                                <option value="">Nguyễn Văn B</option>
+                                                <option value="">Nguyễn Văn B</option>
+                                              </select>
+
+                                            </td>
+                                            <td data-label="Số Hoá Đơn">Combo cắt tóc 10 bước</td>
+                                            <td data-label="ID Sản Phẩm">
+                                              <div class="day-date">13/05/2021</div>
+                                              <button type="button" class="change_date btn btn-primary" data-toggle="modal" data-target="#booking">
+                                                Đổi Ngày
+                                              </button>
+                                            </td>
+                                            <td><button><i class="fas fa-times  fa-lg"></i></button></td>
+
+                                        </tr>
+                                        <tr class="right__table-item">
+                                            <td class="stylelist" data-label="Email" style="text-align: left;padding-left: 30px;  ">
+                                                <select class="name" name="" id="">
+                                                  <option value="">Nguyễn Văn A</option>
+                                                  <option value="">Nguyễn Văn B</option>
+                                                  <option value="">Nguyễn Văn B</option>
+                                                  <option value="">Nguyễn Văn B</option>
+                                                </select>
+                                            </td>
+                                            <td data-label="Số Hoá Đơn">Combo cắt tóc 10 bước</td>
+                                            <td data-label="ID Sản Phẩm">
+                                              <div class="day-date">13/05/2021</div>
+                                              <button type="button" class="change_date btn btn-primary" data-toggle="modal" data-target="#booking">
+                                                Đổi Ngày
+                                              </button>
+                                            </td>
+                                            <td><button><i class="fas fa-times  fa-lg"></i></button></td>
+                                        </tr>
+
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="right_pagination d-flex">
+                            <span class="right_pagination-item">
+                                1
+                            </span>
+                            <span class="right_pagination-item">
+                                2
+                            </span>
+                            <span class="right_pagination-item">
+                                3
+                            </span>
+
+                            <span class="right_pagination-item">
+                                ...
+                            </span>
+
+                            <span class="right_pagination-item">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
                         </div>
                     </div>
-
                 </section>
             </div>
         </div>
     </div>
-    <script>
-        var loadFile = function(event) {
-          var output = document.getElementById('output');
-          output.src = URL.createObjectURL(event.target.files[0]);
-          output.onload = function() {
-            URL.revokeObjectURL(output.src) // free memory
-          }
-          let label = document.querySelector('.right__add-image-label');
-          label.innerHTML ='Remove feature image';
-          console.log(label.innerHTML);
-        };
-      </script>
-    <script src="js/main.js"></script>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="bookingLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingLabel">Thời gian đặt lịch</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="bookingLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="bookingLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="bookingLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="table.css">
+    <script src="js/main.js"></script>
 </body>
 
 </html>
-
